@@ -44,7 +44,7 @@ namespace AbpTestGround.Migrations
                         column: x => x.AssignedPersonId,
                         principalTable: "AppPersons",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.SetNull);
                 });
 
             migrationBuilder.CreateIndex(
