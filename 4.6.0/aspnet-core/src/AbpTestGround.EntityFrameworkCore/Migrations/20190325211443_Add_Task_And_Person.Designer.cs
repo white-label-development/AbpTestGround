@@ -4,14 +4,16 @@ using AbpTestGround.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace AbpTestGround.Migrations
 {
     [DbContext(typeof(AbpTestGroundDbContext))]
-    partial class AbpTestGroundDbContextModelSnapshot : ModelSnapshot
+    [Migration("20190325211443_Add_Task_And_Person")]
+    partial class Add_Task_And_Person
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
